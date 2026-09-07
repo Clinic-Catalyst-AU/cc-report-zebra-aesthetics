@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Zebra Aesthetics - Clinic Growth Plan</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#071E1C; --teal:#0A2A28; --teal2:#0E3D3A; --card:#0F3431; --line:#1C4A46;
+    --mint:#00D4BC; --mint-soft:#7FE8DA; --cream:#F4F1EA; --muted:#9FB8B3; --peach:#F5C7A0;
+    --green:#4CAF7D; --red:#E07A7A;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--teal);color:var(--cream);font-family:'Open Sans',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:300;letter-spacing:.3px;line-height:1.2}
+  em{font-style:italic}
+  .mint{color:var(--mint-soft)}
+  .muted{color:var(--muted)}
+  .eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:12px;color:var(--mint);font-weight:600;font-family:'Montserrat',sans-serif}
+
+  header.hero{padding:90px 0 70px;text-align:center;border-bottom:1px solid var(--line);
+    background:radial-gradient(ellipse at top,rgba(0,212,188,.12),transparent 60%),linear-gradient(180deg,var(--deep),var(--teal))}
+  header.hero h1{font-size:46px;margin:18px 0 14px}
+  header.hero .sub{font-size:19px;color:var(--muted);max-width:660px;margin:0 auto}
+  .divider{width:60px;height:2px;background:var(--mint);margin:26px auto}
+
+  section{padding:60px 0;border-bottom:1px solid var(--line)}
+  section:nth-of-type(even){background:var(--teal2)}
+  section h2{font-size:32px;margin-bottom:10px}
+  section .lead{font-size:18px;color:var(--muted);margin-bottom:34px;max-width:720px}
+
+  .verdict{background:var(--deep);border:1px solid var(--line);border-left:3px solid var(--mint);
+    border-radius:6px;padding:28px 30px;margin:30px 0;font-size:16.5px}
+  .verdict strong{color:var(--mint-soft);font-weight:600}
+  blockquote{border-left:2px solid var(--mint);padding:6px 0 6px 20px;margin:22px 0;color:var(--cream);font-style:italic;font-size:17px}
+  blockquote span{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:6px}
+
+  .bignums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
+  .bignum{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px 20px;text-align:center}
+  .bignum .n{font-size:38px;color:var(--mint-soft);font-weight:300;line-height:1;font-family:'Montserrat',sans-serif}
+  .bignum .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-top:10px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:26px}
+  .tile{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px}
+  .tile h3{font-size:17px;color:var(--mint-soft);margin-bottom:8px;font-weight:600}
+  .tile p{font-size:14.5px;color:#D9E3E0}
+  .tag{display:inline-block;background:rgba(0,212,188,.12);color:var(--mint-soft);font-size:11px;
+    padding:3px 9px;border-radius:20px;margin:3px 4px 3px 0;letter-spacing:.5px}
+
+  .step{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+  .step:last-child{border:none}
+  .step .num{flex:none;width:44px;height:44px;border:1px solid var(--mint);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--mint-soft);font-size:18px;font-family:'Montserrat',sans-serif}
+  .step h3{font-size:19px;margin-bottom:6px}
+  .step p{font-size:15px;color:#D9E3E0}
+
+  .path{background:linear-gradient(160deg,#0F3B37,#071E1C);border:1px solid var(--mint);border-radius:10px;padding:36px;margin-top:30px}
+  .path h3{color:var(--mint-soft);font-size:22px;margin-bottom:8px}
+  .days{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:22px 0}
+  .day{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:20px}
+  .day .d{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--mint);font-family:'Montserrat',sans-serif;font-weight:600}
+  .day h4{font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;margin:8px 0 6px}
+  .day p{font-size:14px;color:#D9E3E0}
+
+  .cta{text-align:center;padding:70px 0}
+  .cta h2{font-size:34px;margin-bottom:14px}
+  .btn{display:inline-block;background:var(--mint);color:#071E1C;text-decoration:none;
+    padding:15px 40px;border-radius:4px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+    font-size:14px;margin-top:20px;font-family:'Montserrat',sans-serif}
+  footer{text-align:center;padding:40px 0 60px;color:var(--muted);font-size:13px}
+  ul.clean{list-style:none;margin-top:16px}
+  ul.clean li{padding:8px 0 8px 26px;position:relative;color:#D9E3E0;font-size:15px}
+  ul.clean li:before{content:'✦';position:absolute;left:0;color:var(--mint)}
+
+  @media(max-width:720px){
+    .grid2,.grid3,.bignums,.days{grid-template-columns:1fr}
+    header.hero h1{font-size:34px}
+    section h2{font-size:26px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Clinic Growth Plan</div>
+    <h1>Zebra Aesthetics</h1>
+    <div class="divider"></div>
+    <p class="sub">How Maroochydore finds you without word of mouth, and how the enquiries get answered without you at 7am.</p>
+    <p class="muted" style="margin-top:24px;font-size:13px">Prepared for Agnes Dube by Kelly Wotherspoon and Alicia Hagen &middot; Clinic Catalyst &middot; September 2026</p>
+  </div>
+</header>
+
+<!-- STARTING POINT -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Where you're starting from</div>
+    <h2>You've built a name the industry knows. The Coast just hasn't caught up yet.</h2>
+    <p class="lead">Registered Nurse, trainer, speaker at the Non-Surgical Symposium and Fresh Life, a clinic in Maroochydore and a loyal book in Maryborough, and socials so personal that patients slide into your DMs to ask if you're okay when you go quiet for a week. From the outside you look like someone who doesn't need help. From the inside you said it in one line.</p>
+
+    <blockquote>"I need help to get people walking through my doors."<span>Agnes, scoping call, 1 September 2026</span></blockquote>
+
+    <div class="bignums">
+      <div class="bignum"><div class="n">1 of 2</div><div class="l">TESLAChair clinics on the Coast</div></div>
+      <div class="bignum"><div class="n">2</div><div class="l">Locations: Maroochydore and Maryborough</div></div>
+      <div class="bignum"><div class="n">1 day</div><div class="l">A week of video content, already filmed</div></div>
+    </div>
+
+    <div class="verdict">
+      Everything you have grown so far came from word of mouth, from nurses you trained posting about you, and from a radio voice people still recognise years later. That is a brand most clinics would pay for. <strong>What's missing is a front door on the Coast</strong>: a way for the women living in the Maroochydore high-rises across the road to find you, and a system that answers them, pre-frames the $50 consult fee, and books them in while you're in the treatment room.
+    </div>
+  </div>
+</section>
+
+<!-- THE INSIGHT -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The opportunity</div>
+    <h2>Women's wellness is your wide-open lane.</h2>
+    <p class="lead">Injectables on the Sunshine Coast is a crowded, expensive fight. Pelvic floor, bladder confidence, core strength after children and through menopause is not. Only one other clinic on the Coast has a TESLAChair, and their whole story is body transformation. Yours is a nurse who has moved into holistic women's health and talks about perimenopausal skin like a friend would.</p>
+
+    <div class="grid2">
+      <div class="tile">
+        <h3>The concern, not the chair</h3>
+        <p>Cold audiences don't search "TESLAChair". They search "why do I leak when I sneeze", "pelvic floor after baby", "menopause bladder". Every campaign, page and post leads with the concern the woman recognises. The chair is the answer in the consult.</p>
+      </div>
+      <div class="tile">
+        <h3>Your walking-distance audience</h3>
+        <p>World Gym opens two doors from you in October. The high-rises on the water are across the road. A three to five kilometre campaign radius around Ocean Street, women 35 to 65, is a small, warm, affordable audience nobody else is speaking to about this.</p>
+      </div>
+    </div>
+
+    <p class="muted" style="margin-top:22px;font-size:14px">Injectables, PRP, bioremodelling and skin stay on the menu. They become the second visit. Women's wellness is the door.</p>
+  </div>
+</section>
+
+<!-- QUICK WINS -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Quick wins - things you can do this week</div>
+    <h2>Free, fast, and already discussed on the call.</h2>
+    <p class="lead">None of this needs us. These fix the leaks before a single ad runs.</p>
+
+    <div class="grid2">
+      <div class="tile">
+        <h3>Pre-frame the $50 before the booking link</h3>
+        <p>People hit Timely, see the fee and time out. Add one warm line on the website booking page and a pinned post: "I take a $50 booking fee for new consults. It comes straight off your treatment, and it's refundable with 48 hours notice." Expectation set, drop-off gone.</p>
+      </div>
+      <div class="tile">
+        <h3>Keep your face on the profile</h3>
+        <p>Ignore the advice to swap your photo for a logo. People follow people. Your patients check in on you when you go quiet, which is the exact relationship a logo can't have. Your socials are genuinely good. Keep going.</p>
+      </div>
+      <div class="tile">
+        <h3>Google Business Profile: get unstuck</h3>
+        <p>Alicia is auditing why verification keeps failing. Before the workshop, make sure the clinic name, the Ocean Street address and the phone number are identical on the website footer, Facebook, Instagram and the Timely booking page. Mismatches are the most common reason the video verification bounces.</p>
+      </div>
+      <div class="tile">
+        <h3>Walk into World Gym with a one-pager</h3>
+        <p>You've already emailed the manager and the physio next door. Give them something to hand out: a single page, concern-led, "pelvic floor and core support for members, first session with Agnes" with a QR code. Partnerships move when there's a piece of paper.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PLAN -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The plan</div>
+    <h2>Three marketing moves. Three systems. That's the whole thing.</h2>
+    <p class="lead">You said if you don't do something the moment you decide, it won't happen. So this is deliberately short.</p>
+
+    <p class="eyebrow" style="margin-top:10px">Marketing</p>
+    <div class="grid3">
+      <div class="tile">
+        <h3>1. The women's wellness campaign on Meta</h3>
+        <p>A lead-form campaign to women 35 to 65 within a few kilometres of Ocean Street. Concern-led hooks in your voice, filmed on your existing content day. Leads land in a CRM and get followed up automatically. This replaces the one-week boosts.</p>
+      </div>
+      <div class="tile">
+        <h3>2. Google, once it lets you in</h3>
+        <p>Verification fixed first. Then Search ads for the people already typing "cosmetic nurse Maroochydore", "pelvic floor treatment Sunshine Coast", "PRP Sunshine Coast". Set up properly once, tracked into Timely, then left running.</p>
+      </div>
+      <div class="tile">
+        <h3>3. Education content that works harder</h3>
+        <p>Your weekly filming day stays. We add Claude, trained on your voice and AHPRA rules, so every video becomes a caption, an ad, a newsletter section and a Maryborough reminder without you rewriting it four times.</p>
+      </div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:36px">Systems</p>
+    <div class="grid3">
+      <div class="tile">
+        <h3>1. An assistant on your DMs, email and missed calls</h3>
+        <p>Trained on your voice and your FAQs. It answers the 7am enquiry, explains the $50 the way you would, and sends the Timely link. You still get the personal ones. You stop getting all of them.</p>
+      </div>
+      <div class="tile">
+        <h3>2. A CRM that catches the timeouts</h3>
+        <p>Every enquiry and every abandoned booking gets a record. The person who timed out at the deposit gets a warm text from your number within minutes, not a message from you that night. You see who booked and who didn't on one screen.</p>
+      </div>
+      <div class="tile">
+        <h3>3. Recall, Maryborough and the monthly email</h3>
+        <p>Your one education email a month keeps going, but from a proper system. Maryborough dates go out from your own mobile number, which fixes most of the opt-out problem. Treatment plan reminders and review requests run on their own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 90 DAYS -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The first 90 days</div>
+    <h2>Fix the leaks, open the door, then let it run.</h2>
+
+    <div class="step">
+      <div class="num">1</div>
+      <div>
+        <h3>Days 1 to 30: fix the leaks</h3>
+        <p>Deposit pre-frame live on the site and socials. Google Business Profile verified. The assistant on your inbox. Your existing Timely list moved into the CRM with treatment plan reminders switched on.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div>
+        <h3>Days 30 to 60: open the door</h3>
+        <p>The women's wellness campaign launches with the World Gym opening. Lead form, follow-up sequence and abandoned-booking recovery all running behind it. Partnership one-pagers in the gym and the physio.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div>
+        <h3>Days 60 to 90: let it run</h3>
+        <p>Google Search ads live. Monthly education email and Maryborough reminders on schedule. Second campaign (skin through perimenopause) switched on as the first one settles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATH FORWARD -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Your path forward</div>
+    <h2>Everything above gets built with you, in three days, in Brisbane.</h2>
+    <p class="lead">You asked us to put your name down. This is what that looks like. Three days, laptop open, and you leave with the assistant, the CRM, the Meta campaign and Google all set up and running, in your name, on your accounts.</p>
+
+    <div class="path">
+      <h3>Clinic Catalyst Brisbane Workshop &middot; 26 to 28 October 2026</h3>
+      <p class="muted">Capped at 10 clinics. In person. Bring your laptop and your logins.</p>
+      <div class="days">
+        <div class="day"><div class="d">Day one</div><h4>Your assistant and CRM</h4><p>Trained on your voice, your policies and your FAQs. AHPRA-safe by default. Lead tracking, deposit pre-framing and follow-up sequences built live.</p></div>
+        <div class="day"><div class="d">Day two</div><h4>Meta</h4><p>The women's wellness funnel built end to end: hooks, lead form, landing page, nurture. You learn to switch offers on and off seasonally.</p></div>
+        <div class="day"><div class="d">Day three</div><h4>Google</h4><p>Verification, Search ads and the SEO foundations set up properly once, tracked into Timely, so they run quietly in the background.</p></div>
+      </div>
+      <ul class="clean">
+        <li>30 days of support after the workshop for anything that needs a second set of hands.</li>
+        <li>You own the system. Your accounts, your subscriptions, your IP. We don't hold anything.</li>
+        <li>No agency retainer. No lock-in. Payment plans are available.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <div class="eyebrow">Next step</div>
+    <h2>Let's get them walking through your doors.</h2>
+    <p class="muted" style="max-width:580px;margin:0 auto">Have a scroll through this with a coffee, then reply to the email with any questions. The workshop details and the spot reservation are on the page below. We'll walk you through all of it together.</p>
+    <a class="btn" href="https://www.cliniccatalyst.com.au/ccworkshop">Brisbane workshop details</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Kelly Wotherspoon and Alicia Hagen &middot; Clinic Catalyst &middot; cliniccatalyst.com.au<br>
+    Based on our scoping call on 1 September 2026 and a review of zebraaesthetics.com.au and your socials.
+  </div>
+</footer>
+
+</body>
+</html>
