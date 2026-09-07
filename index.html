@@ -2,282 +2,808 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Zebra Aesthetics - Clinic Catalyst Growth Plan</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta name="robots" content="noindex,nofollow">
-<title>Zebra Aesthetics - Clinic Growth Plan</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --deep:#071E1C; --teal:#0A2A28; --teal2:#0E3D3A; --card:#0F3431; --line:#1C4A46;
-    --mint:#00D4BC; --mint-soft:#7FE8DA; --cream:#F4F1EA; --muted:#9FB8B3; --peach:#F5C7A0;
-    --green:#4CAF7D; --red:#E07A7A;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--teal);color:var(--cream);font-family:'Open Sans',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-  h1,h2,h3{font-family:'Montserrat',sans-serif;font-weight:300;letter-spacing:.3px;line-height:1.2}
-  em{font-style:italic}
-  .mint{color:var(--mint-soft)}
-  .muted{color:var(--muted)}
-  .eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:12px;color:var(--mint);font-weight:600;font-family:'Montserrat',sans-serif}
-
-  header.hero{padding:90px 0 70px;text-align:center;border-bottom:1px solid var(--line);
-    background:radial-gradient(ellipse at top,rgba(0,212,188,.12),transparent 60%),linear-gradient(180deg,var(--deep),var(--teal))}
-  header.hero h1{font-size:46px;margin:18px 0 14px}
-  header.hero .sub{font-size:19px;color:var(--muted);max-width:660px;margin:0 auto}
-  .divider{width:60px;height:2px;background:var(--mint);margin:26px auto}
-
-  section{padding:60px 0;border-bottom:1px solid var(--line)}
-  section:nth-of-type(even){background:var(--teal2)}
-  section h2{font-size:32px;margin-bottom:10px}
-  section .lead{font-size:18px;color:var(--muted);margin-bottom:34px;max-width:720px}
-
-  .verdict{background:var(--deep);border:1px solid var(--line);border-left:3px solid var(--mint);
-    border-radius:6px;padding:28px 30px;margin:30px 0;font-size:16.5px}
-  .verdict strong{color:var(--mint-soft);font-weight:600}
-  blockquote{border-left:2px solid var(--mint);padding:6px 0 6px 20px;margin:22px 0;color:var(--cream);font-style:italic;font-size:17px}
-  blockquote span{display:block;font-style:normal;font-size:13px;color:var(--muted);margin-top:6px}
-
-  .bignums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
-  .bignum{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:26px 20px;text-align:center}
-  .bignum .n{font-size:38px;color:var(--mint-soft);font-weight:300;line-height:1;font-family:'Montserrat',sans-serif}
-  .bignum .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-top:10px}
-
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
-  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:26px}
-  .tile{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 24px}
-  .tile h3{font-size:17px;color:var(--mint-soft);margin-bottom:8px;font-weight:600}
-  .tile p{font-size:14.5px;color:#D9E3E0}
-  .tag{display:inline-block;background:rgba(0,212,188,.12);color:var(--mint-soft);font-size:11px;
-    padding:3px 9px;border-radius:20px;margin:3px 4px 3px 0;letter-spacing:.5px}
-
-  .step{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
-  .step:last-child{border:none}
-  .step .num{flex:none;width:44px;height:44px;border:1px solid var(--mint);border-radius:50%;
-    display:flex;align-items:center;justify-content:center;color:var(--mint-soft);font-size:18px;font-family:'Montserrat',sans-serif}
-  .step h3{font-size:19px;margin-bottom:6px}
-  .step p{font-size:15px;color:#D9E3E0}
-
-  .path{background:linear-gradient(160deg,#0F3B37,#071E1C);border:1px solid var(--mint);border-radius:10px;padding:36px;margin-top:30px}
-  .path h3{color:var(--mint-soft);font-size:22px;margin-bottom:8px}
-  .days{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:22px 0}
-  .day{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:20px}
-  .day .d{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--mint);font-family:'Montserrat',sans-serif;font-weight:600}
-  .day h4{font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;margin:8px 0 6px}
-  .day p{font-size:14px;color:#D9E3E0}
-
-  .cta{text-align:center;padding:70px 0}
-  .cta h2{font-size:34px;margin-bottom:14px}
-  .btn{display:inline-block;background:var(--mint);color:#071E1C;text-decoration:none;
-    padding:15px 40px;border-radius:4px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
-    font-size:14px;margin-top:20px;font-family:'Montserrat',sans-serif}
-  footer{text-align:center;padding:40px 0 60px;color:var(--muted);font-size:13px}
-  ul.clean{list-style:none;margin-top:16px}
-  ul.clean li{padding:8px 0 8px 26px;position:relative;color:#D9E3E0;font-size:15px}
-  ul.clean li:before{content:'✦';position:absolute;left:0;color:var(--mint)}
-
-  @media(max-width:720px){
-    .grid2,.grid3,.bignums,.days{grid-template-columns:1fr}
-    header.hero h1{font-size:34px}
-    section h2{font-size:26px}
-  }
+:root {
+  --dark: #0A2A28;
+  --dark-alt: #0D3D38;
+  --teal: #00B4A0;
+  --teal-bright: #00D4BC;
+  --peach: #E8A87C;
+  --peach-light: #F5C7A0;
+  --white: #FFFFFF;
+  --text-faint: rgba(255,255,255,0.6);
+  --text-mid: rgba(255,255,255,0.85);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Open Sans',sans-serif; background:#000; color:var(--white); overflow:hidden; }
+.deck { height:100vh; overflow-y:auto; scroll-snap-type:y mandatory; }
+.slide { height:100vh; scroll-snap-align:start; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.slide-img { padding:0; }
+.slide-img img { width:100%; height:100%; object-fit:contain; background:#000; }
+.slide-html { padding:3rem 4rem; background:var(--dark); }
+.slide-html.alt { background:var(--dark-alt); }
+.slide-html.teal-bg { background:linear-gradient(135deg, #073B36 0%, #0A2A28 100%); }
+.slide-html { background:linear-gradient(160deg, #0A2A28 0%, #0E3D3A 40%, #0A2A28 100%); }
+.slide-html.alt { background:linear-gradient(160deg, #0D3D38 0%, #0A2A28 50%, #0D3D38 100%); }
+.inner { max-width:1100px; width:100%; position:relative; z-index:2; }
+.dot-overlay { position:absolute; inset:0; opacity:0.05; background-image:radial-gradient(circle,var(--teal) 1px,transparent 1px); background-size:50px 50px; pointer-events:none; }
+.glow { position:absolute; width:500px; height:500px; border-radius:50%; background:radial-gradient(circle,rgba(0,180,160,0.12) 0%,transparent 70%); pointer-events:none; }
+.glow-tl { top:-200px; left:-200px; }
+.glow-br { bottom:-200px; right:-200px; }
+.label { font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--teal-bright); margin-bottom:0.75rem; }
+.label-peach { color:var(--peach); }
+h2 { font-family:'Montserrat',sans-serif; font-size:clamp(1.4rem,3vw,2.2rem); font-weight:800; text-transform:uppercase; line-height:1.1; margin-bottom:1rem; }
+h3 { font-family:'Montserrat',sans-serif; font-size:1rem; font-weight:700; text-transform:uppercase; margin-bottom:0.6rem; }
+.teal { color:var(--teal-bright); }
+.peach { color:var(--peach); }
+p { font-size:0.9rem; color:var(--text-mid); font-weight:300; line-height:1.8; }
+.split { display:grid; grid-template-columns:2fr 3fr; gap:3rem; align-items:center; }
+.split-even { display:grid; grid-template-columns:1fr 1fr; gap:2.5rem; align-items:center; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+.grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+.mt-1 { margin-top:1rem; }
+.mt-2 { margin-top:2rem; }
+.task-num { font-family:'Montserrat',sans-serif; font-size:0.6rem; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--peach); display:inline-block; border:1px solid rgba(232,168,124,0.3); padding:0.25rem 0.7rem; border-radius:4px; margin-bottom:0.8rem; }
+.quote { border-left:3px solid var(--peach); padding:0.8rem 1.2rem; margin-bottom:1.5rem; background:rgba(232,168,124,0.04); border-radius:0 6px 6px 0; }
+.quote p { font-style:italic; color:var(--peach-light); font-size:1rem; line-height:1.5; }
+.browser-frame { border-radius:8px; overflow:hidden; border:1px solid rgba(255,255,255,0.1); background:#111; }
+.browser-bar { height:28px; background:#1a1a1a; display:flex; align-items:center; padding:0 10px; gap:6px; }
+.browser-dot { width:8px; height:8px; border-radius:50%; background:#333; }
+.browser-dot.r { background:#ff5f56; }
+.browser-dot.y { background:#ffbd2e; }
+.browser-dot.g { background:#27c93f; }
+.browser-frame img { width:100%; display:block; }
+.scroll-arrow { position:absolute; bottom:2.5rem; left:50%; transform:translateX(-50%); text-align:center; z-index:10; animation:bounce 2s infinite; cursor:pointer; }
+.scroll-arrow span { display:block; font-family:'Montserrat',sans-serif; font-size:0.6rem; font-weight:600; color:rgba(255,255,255,0.4); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:0.4rem; }
+.scroll-arrow .arrow { font-size:1.8rem; color:var(--teal-bright); }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+.demo-link { display:inline-flex; align-items:center; gap:0.4rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-size:0.72rem; font-weight:700; text-decoration:none; letter-spacing:0.08em; text-transform:uppercase; margin-top:1rem; transition:color 0.2s; }
+.demo-link:hover { color:#00ffec; }
+.card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.07); border-radius:8px; padding:1.3rem; }
+.card h4 { font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--teal-bright); margin-bottom:0.4rem; }
+.card p { font-size:0.8rem; color:var(--text-faint); line-height:1.6; }
+.price-card { background:rgba(0,180,160,0.06); border:2px solid var(--teal); border-radius:12px; padding:2rem; text-align:center; }
+.price-tag { font-family:'Montserrat',sans-serif; font-size:clamp(2rem,4vw,3rem); font-weight:900; color:var(--teal-bright); }
+.price-period { font-size:0.75rem; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.1em; }
+.includes-list { list-style:none; text-align:left; margin-top:1.2rem; }
+.includes-list li { padding:0.35rem 0; font-size:0.78rem; color:var(--text-mid); border-bottom:1px solid rgba(255,255,255,0.04); display:flex; align-items:center; gap:0.4rem; }
+.includes-list li::before { content:"\2713"; color:var(--teal-bright); font-weight:700; }
+.discount-badge { display:inline-block; background:var(--peach); color:var(--dark); font-family:'Montserrat',sans-serif; font-size:0.7rem; font-weight:800; padding:0.35rem 0.9rem; border-radius:4px; text-transform:uppercase; letter-spacing:0.06em; margin-top:1rem; }
+.faq-item { padding:0.8rem 0; border-bottom:1px solid rgba(255,255,255,0.05); }
+.faq-q { font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:700; color:var(--peach); margin-bottom:0.3rem; }
+.faq-a { font-size:0.8rem; color:var(--text-faint); }
+.sig-line { border-bottom:1px solid rgba(255,255,255,0.25); padding-bottom:0.5rem; margin-top:2rem; min-width:220px; display:inline-block; }
+.sig-label { font-size:0.65rem; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.1em; margin-top:0.3rem; }
+.slide-counter { position:fixed; bottom:1.2rem; right:1.5rem; font-family:'Montserrat',sans-serif; font-size:0.65rem; font-weight:600; color:rgba(255,255,255,0.25); letter-spacing:0.08em; z-index:100; }
+.nav-hint { position:fixed; bottom:1.2rem; left:1.5rem; font-family:'Montserrat',sans-serif; font-size:0.55rem; color:rgba(255,255,255,0.15); letter-spacing:0.08em; z-index:100; }
+@media print {
+  .deck { overflow:visible; scroll-snap-type:none; }
+  .slide { min-height:100vh; page-break-after:always; page-break-inside:avoid; }
+  .slide-counter, .nav-hint { display:none; }
+}
+@media (max-width:768px) {
+  .slide { min-height:100vh; padding:2rem 1.2rem; }
+  .slide-img { background:#0A2A28; }
+  .slide-img img { width:100%; height:100%; object-fit:contain; }
+  .slide-html { padding:2rem 1.2rem; }
+  .inner { width:100%; }
+  .split { grid-template-columns:1fr; gap:1.2rem; }
+  .split-even { grid-template-columns:1fr; gap:1.2rem; }
+  .grid-2 { grid-template-columns:1fr; gap:0.8rem; }
+  .grid-4 { grid-template-columns:1fr 1fr; gap:0.6rem; }
+  [style*="grid-template-columns"] { grid-template-columns:1fr !important; gap:1rem !important; }
+  h2 { font-size:1.2rem; margin-bottom:0.7rem; }
+  h3 { font-size:0.85rem; }
+  .label { font-size:0.55rem; }
+  .task-num { font-size:0.5rem; padding:0.2rem 0.5rem; }
+  p { font-size:0.8rem; line-height:1.6; }
+  .quote { padding:0.5rem 0.8rem; margin-bottom:0.8rem; }
+  .quote p { font-size:0.85rem; }
+  .card { padding:0.8rem; }
+  .card h4 { font-size:0.65rem; }
+  .card p { font-size:0.7rem; line-height:1.5; }
+  .browser-frame { border-radius:6px; }
+  .browser-bar { height:22px; padding:0 8px; }
+  .browser-dot { width:6px; height:6px; }
+  .browser-frame img { max-height:250px; object-fit:cover; }
+  .price-card { padding:1.2rem; }
+  .price-tag { font-size:1.8rem; }
+  .includes-list li { font-size:0.7rem; padding:0.25rem 0; }
+  .discount-badge { font-size:0.6rem; padding:0.25rem 0.6rem; }
+  .faq-item { padding:0.5rem 0; }
+  .faq-q { font-size:0.68rem; }
+  .faq-a { font-size:0.72rem; }
+  .sig-line { min-width:120px; }
+  .scroll-arrow { display:none; }
+  .slide-counter { display:none; }
+  .nav-hint { font-size:0.5rem; }
+  .demo-link { font-size:0.65rem; }
+}
 </style>
 </head>
 <body>
+<div id="inapp-banner" style="display:none; position:fixed; top:0; left:0; right:0; z-index:9999; background:var(--teal-bright); color:var(--dark); padding:10px 16px; text-align:center; font-family:'Montserrat',sans-serif; font-size:0.7rem; font-weight:700;">
+  For the best experience, <a href="" id="inapp-link" style="color:var(--dark); text-decoration:underline;">open in Safari</a> or Chrome
+</div>
+<div class="deck" id="deck">
 
-<header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Clinic Growth Plan</div>
-    <h1>Zebra Aesthetics</h1>
-    <div class="divider"></div>
-    <p class="sub">How Maroochydore finds you without word of mouth, and how the enquiries get answered without you at 7am.</p>
-    <p class="muted" style="margin-top:24px;font-size:13px">Prepared for Agnes Dube by Kelly Wotherspoon and Alicia Hagen &middot; Clinic Catalyst &middot; September 2026</p>
+<!-- ========== SLIDE 1: COVER ========== -->
+<section class="slide slide-html" style="background:radial-gradient(ellipse at center, #0E3D3A 0%, #0A2A28 60%, #071E1C 100%);">
+  <div class="dot-overlay"></div>
+  <div class="inner" style="text-align:center;">
+    <img src="assets/cc-wordmark.png" alt="Clinic Catalyst" style="height:40px; margin-bottom:3rem; opacity:0.9;">
+    <h2 style="font-size:clamp(2rem,4vw,3.2rem); letter-spacing:2px; margin-bottom:0.5rem;">You look after the women<br>who walk through the door.<br><span class="teal">We get them there.</span></h2>
+    <p style="max-width:500px; margin:1.5rem auto 2.5rem; font-size:1rem; color:var(--text-mid);">Prepared for Agnes Dube, Zebra Aesthetics</p>
+    <p style="font-size:0.85rem; color:var(--text-faint); margin-bottom:0.3rem;">8 September 2026</p>
+    <p style="font-size:0.7rem; color:rgba(255,255,255,0.35); letter-spacing:2px; text-transform:uppercase;">By <strong style="color:var(--teal-bright); font-weight:600;">Kelly Wotherspoon</strong> & <strong style="color:var(--teal-bright); font-weight:600;">Alicia Hagen</strong></p>
   </div>
-</header>
-
-<!-- STARTING POINT -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Where you're starting from</div>
-    <h2>You've built a name the industry knows. The Coast just hasn't caught up yet.</h2>
-    <p class="lead">Registered Nurse, trainer, speaker at the Non-Surgical Symposium and Fresh Life, a clinic in Maroochydore and a loyal book in Maryborough, and socials so personal that patients slide into your DMs to ask if you're okay when you go quiet for a week. From the outside you look like someone who doesn't need help. From the inside you said it in one line.</p>
-
-    <blockquote>"I need help to get people walking through my doors."<span>Agnes, scoping call, 1 September 2026</span></blockquote>
-
-    <div class="bignums">
-      <div class="bignum"><div class="n">1 of 2</div><div class="l">TESLAChair clinics on the Coast</div></div>
-      <div class="bignum"><div class="n">2</div><div class="l">Locations: Maroochydore and Maryborough</div></div>
-      <div class="bignum"><div class="n">1 day</div><div class="l">A week of video content, already filmed</div></div>
-    </div>
-
-    <div class="verdict">
-      Everything you have grown so far came from word of mouth, from nurses you trained posting about you, and from a radio voice people still recognise years later. That is a brand most clinics would pay for. <strong>What's missing is a front door on the Coast</strong>: a way for the women living in the Maroochydore high-rises across the road to find you, and a system that answers them, pre-frames the $50 consult fee, and books them in while you're in the treatment room.
-    </div>
+  <div class="scroll-arrow" onclick="document.getElementById('deck').scrollBy({top:window.innerHeight,behavior:'smooth'})">
+    <span>Click to begin</span>
+    <div class="arrow">&#8595;</div>
   </div>
 </section>
 
-<!-- THE INSIGHT -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">The opportunity</div>
-    <h2>Women's wellness is your wide-open lane.</h2>
-    <p class="lead">Injectables on the Sunshine Coast is a crowded, expensive fight. Pelvic floor, bladder confidence, core strength after children and through menopause is not. Only one other clinic on the Coast has a TESLAChair, and their whole story is body transformation. Yours is a nurse who has moved into holistic women's health and talks about perimenopausal skin like a friend would.</p>
+<!-- ========== SLIDE 2: SOCIAL PROOF ========== -->
+<section class="slide" style="padding:0; background:#000;"><img src="assets/social-proof.png" alt="Clinics we've worked with" style="width:100%; height:100%; object-fit:contain;"></section>
 
-    <div class="grid2">
-      <div class="tile">
-        <h3>The concern, not the chair</h3>
-        <p>Cold audiences don't search "TESLAChair". They search "why do I leak when I sneeze", "pelvic floor after baby", "menopause bladder". Every campaign, page and post leads with the concern the woman recognises. The chair is the answer in the consult.</p>
+<!-- ========== SLIDE 4: WHAT YOU'VE BUILT ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <div class="split" style="grid-template-columns:1fr 2fr; gap:2.5rem;">
+      <div style="text-align:center;">
+        <p class="label label-peach">Your clinic right now</p>
+        <h2 style="font-size:clamp(1.2rem,2.5vw,1.8rem);">What You've <span class="teal">Built Already</span></h2>
+        <img src="assets/agnes-portrait.jpg" alt="Agnes Dube" style="width:100%; max-width:280px; border-radius:10px; margin-top:1.5rem; object-fit:cover; object-position:center 20%; aspect-ratio:3/4;">
       </div>
-      <div class="tile">
-        <h3>Your walking-distance audience</h3>
-        <p>World Gym opens two doors from you in October. The high-rises on the water are across the road. A three to five kilometre campaign radius around Ocean Street, women 35 to 65, is a small, warm, affordable audience nobody else is speaking to about this.</p>
-      </div>
-    </div>
-
-    <p class="muted" style="margin-top:22px;font-size:14px">Injectables, PRP, bioremodelling and skin stay on the menu. They become the second visit. Women's wellness is the door.</p>
-  </div>
-</section>
-
-<!-- QUICK WINS -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Quick wins - things you can do this week</div>
-    <h2>Free, fast, and already discussed on the call.</h2>
-    <p class="lead">None of this needs us. These fix the leaks before a single ad runs.</p>
-
-    <div class="grid2">
-      <div class="tile">
-        <h3>Pre-frame the $50 before the booking link</h3>
-        <p>People hit Timely, see the fee and time out. Add one warm line on the website booking page and a pinned post: "I take a $50 booking fee for new consults. It comes straight off your treatment, and it's refundable with 48 hours notice." Expectation set, drop-off gone.</p>
-      </div>
-      <div class="tile">
-        <h3>Keep your face on the profile</h3>
-        <p>Ignore the advice to swap your photo for a logo. People follow people. Your patients check in on you when you go quiet, which is the exact relationship a logo can't have. Your socials are genuinely good. Keep going.</p>
-      </div>
-      <div class="tile">
-        <h3>Google Business Profile: get unstuck</h3>
-        <p>Alicia is auditing why verification keeps failing. Before the workshop, make sure the clinic name, the Ocean Street address and the phone number are identical on the website footer, Facebook, Instagram and the Timely booking page. Mismatches are the most common reason the video verification bounces.</p>
-      </div>
-      <div class="tile">
-        <h3>Walk into World Gym with a one-pager</h3>
-        <p>You've already emailed the manager and the physio next door. Give them something to hand out: a single page, concern-led, "pelvic floor and core support for members, first session with Agnes" with a QR code. Partnerships move when there's a piece of paper.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">Registered Nurse with over 10 years across emergency, paediatrics and surgical wards before aesthetics. A nurse in the room, not a franchise counter.</p></div>
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">Industry educator: PRP and advanced nurse trainer, speaker at the Non-Surgical Symposium, Fresh Life and the ABM Brisbane panel. Nurses you train send you their friends.</p></div>
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">One of only two TESLAChair clinics on the Sunshine Coast, plus PRP, biofiller, bioremodelling, microneedling, IV wellness and LED in one room.</p></div>
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">Two locations: Ocean Street, Maroochydore, near Cotton Tree, and a loyal Maryborough book you still visit monthly.</p></div>
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">A strong, personal social presence. Patients DM to check you are okay when you go quiet for a week. That is a relationship a logo cannot buy.</p></div>
+        <div class="card" style="display:flex; gap:0.8rem; align-items:flex-start; padding:1rem;"><span style="color:var(--teal-bright); font-size:1.1rem; font-weight:700; flex-shrink:0;">&#10003;</span><p style="font-size:0.82rem; color:var(--text-mid); line-height:1.5; margin:0;">World Gym opens two doors down at the end of October and the manager is keen. The high-rises on the water are across the road.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- THE PLAN -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">The plan</div>
-    <h2>Three marketing moves. Three systems. That's the whole thing.</h2>
-    <p class="lead">You said if you don't do something the moment you decide, it won't happen. So this is deliberately short.</p>
-
-    <p class="eyebrow" style="margin-top:10px">Marketing</p>
-    <div class="grid3">
-      <div class="tile">
-        <h3>1. The women's wellness campaign on Meta</h3>
-        <p>A lead-form campaign to women 35 to 65 within a few kilometres of Ocean Street. Concern-led hooks in your voice, filmed on your existing content day. Leads land in a CRM and get followed up automatically. This replaces the one-week boosts.</p>
-      </div>
-      <div class="tile">
-        <h3>2. Google, once it lets you in</h3>
-        <p>Verification fixed first. Then Search ads for the people already typing "cosmetic nurse Maroochydore", "pelvic floor treatment Sunshine Coast", "PRP Sunshine Coast". Set up properly once, tracked into Timely, then left running.</p>
-      </div>
-      <div class="tile">
-        <h3>3. Education content that works harder</h3>
-        <p>Your weekly filming day stays. We add Claude, trained on your voice and AHPRA rules, so every video becomes a caption, an ad, a newsletter section and a Maryborough reminder without you rewriting it four times.</p>
-      </div>
-    </div>
-
-    <p class="eyebrow" style="margin-top:36px">Systems</p>
-    <div class="grid3">
-      <div class="tile">
-        <h3>1. An assistant on your DMs, email and missed calls</h3>
-        <p>Trained on your voice and your FAQs. It answers the 7am enquiry, explains the $50 the way you would, and sends the Timely link. You still get the personal ones. You stop getting all of them.</p>
-      </div>
-      <div class="tile">
-        <h3>2. A CRM that catches the timeouts</h3>
-        <p>Every enquiry and every abandoned booking gets a record. The person who timed out at the deposit gets a warm text from your number within minutes, not a message from you that night. You see who booked and who didn't on one screen.</p>
-      </div>
-      <div class="tile">
-        <h3>3. Recall, Maryborough and the monthly email</h3>
-        <p>Your one education email a month keeps going, but from a proper system. Maryborough dates go out from your own mobile number, which fixes most of the opt-out problem. Treatment plan reminders and review requests run on their own.</p>
-      </div>
+<!-- ========== SLIDE: GOALS (moved here from below) ========== -->
+<section class="slide slide-html alt" data-editable="true">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <p class="label label-peach">Tailored for Zebra Aesthetics</p>
+    <h2>Your Goals & <span class="teal">Objectives</span></h2>
+    <div style="max-width:800px; margin-top:1rem;">
+      <div class='card' style='padding:1.1rem; margin-bottom:0.7rem;'><h4>1. Get People Walking Through the Door</h4><p>Your words. Word of mouth and the nurses you train built Zebra. The Coast needs a front door that works without you, so Maroochydore finds you on its own.</p></div>
+      <div class='card' style='padding:1.1rem; margin-bottom:0.7rem;'><h4>2. Make TESLAChair a Major Revenue Pillar</h4><p>Alicia's number one priority. Ten packages a month is $21,000 of turnover on its own. Treat it as a mini business inside Zebra with its own target, page, ads and follow-up.</p></div>
+      <div class='card' style='padding:1.1rem; margin-bottom:0.7rem;'><h4>3. Stop Answering Every Message Yourself</h4><p>The 7am enquiry booked from bed, the $50 consult fee explained by text, the timed-out booking recovered. All of it handled in your voice while you are in the treatment room.</p></div>
+      <div class='card' style='padding:1.1rem; margin-bottom:0.7rem;'><h4>4. Fix Google So It Lets You In</h4><p>Verification has bounced for months and it is blocking Google Ads. Get the profile verified, then catch the people already searching for you.</p></div>
+      <div class='card' style='padding:1.1rem;'><h4>5. Own It, So Zebra Runs Without You</h4><p>You said you want the business to run itself one day, with one trusted person in clinic and you out educating. Every system we build sits in your accounts, yours forever.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 90 DAYS -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">The first 90 days</div>
-    <h2>Fix the leaks, open the door, then let it run.</h2>
-
-    <div class="step">
-      <div class="num">1</div>
+<!-- ========== SLIDE 5: TASK 1 - BRANDING & POSITIONING ========== -->
+<section class="slide slide-html alt" data-editable="true">
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <p class="label">Quick wins you can implement now</p>
+    <div class="split">
       <div>
-        <h3>Days 1 to 30: fix the leaks</h3>
-        <p>Deposit pre-frame live on the site and socials. Google Business Profile verified. The assistant on your inbox. Your existing Timely list moved into the CRM with treatment plan reminders switched on.</p>
+        <span class="task-num">Task One</span>
+        <h2>Branding & <span class="teal">Positioning</span></h2>
+        <div class="quote"><p>"I need help to get people walking through my doors."</p></div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Stop leading with "TESLAChair". Lead with why someone needs it: leaking when you laugh, sneeze or run, the core that never came back after babies, the menopause changes nobody talks about.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Keep your face on the profile. People follow people, and your patients already check in on you. The advice to swap it for a logo was wrong.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Position as a Registered Nurse with a special interest in women's health through perimenopause and menopause. That is your lane on the Coast, and nobody else is holding it.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Swap "expertise" on the site for "experience". AHPRA reserves specialist language for specialist registration, and your training record does the talking anyway.</li>
+        </ul>
       </div>
-    </div>
-    <div class="step">
-      <div class="num">2</div>
       <div>
-        <h3>Days 30 to 60: open the door</h3>
-        <p>The women's wellness campaign launches with the World Gym opening. Lead form, follow-up sequence and abandoned-booking recovery all running behind it. Partnership one-pagers in the gym and the physio.</p>
-      </div>
-    </div>
-    <div class="step">
-      <div class="num">3</div>
-      <div>
-        <h3>Days 60 to 90: let it run</h3>
-        <p>Google Search ads live. Monthly education email and Maryborough reminders on schedule. Second campaign (skin through perimenopause) switched on as the first one settles.</p>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <div style="aspect-ratio:16/10; background:linear-gradient(135deg,#0e3d3a,#0a2a28); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.5rem; padding:2rem; text-align:center;"><p style="font-family:'Montserrat',sans-serif; font-size:0.7rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--teal-bright); margin:0;">Your photos go here</p><p style="font-size:0.78rem; color:var(--text-faint); margin:0;">Agnes in the treatment room, the Ocean Street clinic and the TESLAChair. Send us three and this slide fills itself.</p></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PATH FORWARD -->
-<section>
-  <div class="wrap">
-    <div class="eyebrow">Your path forward</div>
-    <h2>Everything above gets built with you, in three days, in Brisbane.</h2>
-    <p class="lead">You asked us to put your name down. This is what that looks like. Three days, laptop open, and you leave with the assistant, the CRM, the Meta campaign and Google all set up and running, in your name, on your accounts.</p>
-
-    <div class="path">
-      <h3>Clinic Catalyst Brisbane Workshop &middot; 26 to 28 October 2026</h3>
-      <p class="muted">Capped at 10 clinics. In person. Bring your laptop and your logins.</p>
-      <div class="days">
-        <div class="day"><div class="d">Day one</div><h4>Your assistant and CRM</h4><p>Trained on your voice, your policies and your FAQs. AHPRA-safe by default. Lead tracking, deposit pre-framing and follow-up sequences built live.</p></div>
-        <div class="day"><div class="d">Day two</div><h4>Meta</h4><p>The women's wellness funnel built end to end: hooks, lead form, landing page, nurture. You learn to switch offers on and off seasonally.</p></div>
-        <div class="day"><div class="d">Day three</div><h4>Google</h4><p>Verification, Search ads and the SEO foundations set up properly once, tracked into Timely, so they run quietly in the background.</p></div>
+<!-- ========== SLIDE 6: TASK 2 - WEBSITE & SEO ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num">Task Two</span>
+        <h2>Website & <span class="teal">SEO</span></h2>
+        <div class="quote"><p>"It's been a nightmare to be verified by Google. I have done that many videos for Google to verify my page."</p></div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> No Meta pixel and no Google tag on the site. Every boost you have ever run collected no data you can use.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Google Business Profile still unverified. First job: make the clinic name, Ocean Street address and phone identical on the website footer, Facebook, Instagram and Timely, then resubmit.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> No dedicated TESLAChair page. Body treatments share one page with IV infusions, so there is nothing for a women's wellness ad to land on.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> No lead capture anywhere. The only path is the Timely button, and the $50 fee hits people before anyone has explained it.</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Quick wins: pixel in five minutes, a one-line deposit pre-frame on the booking page today, Maroochydore and Cotton Tree in the page titles.</li>
+        </ul>
       </div>
-      <ul class="clean">
-        <li>30 days of support after the workshop for anything that needs a second set of hands.</li>
-        <li>You own the system. Your accounts, your subscriptions, your IP. We don't hold anything.</li>
-        <li>No agency retainer. No lock-in. Payment plans are available.</li>
-      </ul>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/website-real-screenshot.png" alt="zebraaesthetics.com.au current homepage">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="cta">
-  <div class="wrap">
-    <div class="eyebrow">Next step</div>
-    <h2>Let's get them walking through your doors.</h2>
-    <p class="muted" style="max-width:580px;margin:0 auto">Have a scroll through this with a coffee, then reply to the email with any questions. The workshop details and the spot reservation are on the page below. We'll walk you through all of it together.</p>
-    <a class="btn" href="https://www.cliniccatalyst.com.au/ccworkshop">Brisbane workshop details</a>
+<!-- ========== SLIDE 7: TASK 3 - OFFER & PRICING ========== -->
+<section class="slide slide-html alt" data-editable="true">
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num">Task Three</span>
+        <h2>Offer & <span class="teal">Pricing Strategy</span></h2>
+        <div class="quote"><p>"As soon as people go into my booking system and they notice that they have to pay, they stop."</p></div>
+        <p style="font-size:0.78rem; color:var(--text-mid); margin-bottom:0.7rem;">A three-tier ladder, so nobody meets the $50 before they meet you:</p>
+        <div style="background:rgba(0,180,160,0.06); border:1px solid rgba(0,180,160,0.25); border-radius:6px; padding:0.6rem 0.85rem; margin-bottom:0.5rem;">
+          <p style="font-size:0.68rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.15rem;">Tier 1 - Free</p>
+          <p style="font-size:0.78rem; color:var(--text-mid); line-height:1.45; margin:0;">Women's Wellness Assessment - 60 seconds, concern-led, captures name and mobile on the website and in your Instagram bio</p>
+        </div>
+        <div style="background:rgba(0,180,160,0.06); border:1px solid rgba(0,180,160,0.25); border-radius:6px; padding:0.6rem 0.85rem; margin-bottom:0.5rem;">
+          <p style="font-size:0.68rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.15rem;">Tier 2 - The Consult, Pre-framed</p>
+          <p style="font-size:0.78rem; color:var(--text-mid); line-height:1.45; margin:0;">Your $50 consult stays. The assistant explains it before the link: it comes off the treatment and it is refundable with 48 hours notice</p>
+        </div>
+        <div style="background:rgba(232,168,124,0.08); border:1px solid rgba(232,168,124,0.3); border-radius:6px; padding:0.6rem 0.85rem; margin-bottom:0.8rem;">
+          <p style="font-size:0.68rem; color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.15rem;">Tier 3 - The Front-End Offer</p>
+          <p style="font-size:0.78rem; color:var(--text-mid); line-height:1.45; margin:0;">TESLAChair 10-session pack <strong style="color:var(--teal-bright);">$999</strong> <span style="color:var(--text-faint);">(standard pack from $2,100)</span> - Alicia's recommended campaign offer, sold as pelvic floor confidence, never as a machine</p>
+        </div>
+        <a href="https://clinic-catalyst-au.github.io/zebra-aesthetics/assessment.html" target="_blank" class="demo-link">Try the Wellness Assessment Demo &#8594;</a>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/assessment-screenshot.png" alt="Women's wellness assessment demo">
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+<!-- ========== SLIDE 8: TASK 4 - ADVERTISING ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num">Task Four</span>
+        <h2>Advertising & <span class="teal">Offer Strategy</span></h2>
+        <div class="quote"><p>"I need all those people in Maroochydore that live in the high rises on the water to know that there's another one right across the road from them."</p></div>
+        <div style="display:grid; gap:0.55rem;">
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Pelvic floor</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Alicia's hero campaign. "Treat or prevent pelvic floor concerns" &middot; 10 sessions <span style="color:var(--teal-bright); font-weight:600;">$999</span> &middot; hormone-free, no downtime, sit in a chair for 30 minutes</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">After babies</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">The core and bladder that never came back &middot; same pack, mums 30 to 50 within 5 km of Ocean Street</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Menopause</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Bladder confidence and intimacy through the change &middot; women 45 to 65 &middot; leads into your perimenopause skin story</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Skin</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Perimenopausal skin: "I look tired, I've lost the glow" &middot; PRP and bioremodelling consult &middot; never the device name</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">World Gym</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Member offer for the opening at the end of October: pelvic floor and core support, first session with Agnes &middot; QR one-pager at the desk</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Physio</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Referral partnership down the road: they treat the pelvic floor, you strengthen it. A piece of paper moves this, emails did not</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Maryborough</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Monthly visit dates pushed by SMS from your own number, so the opt-outs stop costing you bookings</span>
+          </div>
+          <div style="display:flex; align-items:baseline; gap:0.6rem;">
+            <span style="color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.72rem; min-width:95px; flex-shrink:0;">Remarketing</span>
+            <span style="font-size:0.78rem; color:var(--text-mid); line-height:1.4;">Everyone who hit Timely and timed out gets the pre-frame, then the link again</span>
+          </div>
+        </div>
+        <p style="font-size:0.72rem; color:var(--text-faint); margin-top:0.8rem; font-style:italic;">All geo-targeted: Maroochydore, Cotton Tree, Alexandra Headland, Mooloolaba, Buderim</p>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/ad-mockups-combined.png" alt="Concern-led ad mockups for the Sunshine Coast">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 9: TASK 5 - CRM & NURTURE ========== -->
+<section class="slide slide-html alt" data-editable="true">
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num">Task Five</span>
+        <h2>CRM & <span class="teal">Nurture Systems</span></h2>
+        <div class="quote"><p>"I'm just using Timely. I literally send out everything through Timely."</p></div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Your whole Timely database is a warm list that only hears from you once a month, and the ones who opted out still ask when you are next in Maryborough</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Timely stays. We connect a CRM beside it, tag every contact by concern and location, and every enquiry and timed-out booking gets a record</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Treatment plan reminders, TESLAChair session recall, your monthly education email and the Maryborough dates, all automated and sent from your own number</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Review requests fire after every appointment. Once Google lets you in, the reviews start compounding</li>
+        </ul>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/review-sms-mockup.png" alt="CRM and review SMS automation">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 10: TASK 6 - SPEED TO LEAD ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num">Task Six</span>
+        <h2>Speed-to-Lead & <span class="teal">After Hours</span></h2>
+        <div class="quote"><p>"I don't want to be responding to people's messages all the time."</p></div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> The 7am referral you booked while getting ready is the whole business model right now: you are the receptionist</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> An assistant trained on your voice and your FAQs answers DMs, email and missed calls inside a minute, explains the $50 the way you would, then sends the Timely link</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> The personal ones still come to you, with the context already captured. You stop getting all of them</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Timed out at the deposit? A warm text from your number within minutes, not a message from you that night</li>
+        </ul>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/speed-to-lead-mockup.png" alt="After-hours automation mockup">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 11: BONUS - SKIN ASSESSMENT QUIZ ========== -->
+<section class="slide slide-html teal-bg" data-editable="true">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num" style="border-color:var(--peach); color:var(--peach);">Bonus</span>
+        <h2>Interactive <span class="peach">Women's Wellness Assessment</span></h2>
+        <div class="quote"><p>"I moved towards that women's health holistic approach."</p></div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Five questions mapped to the concerns you treat: bladder confidence, core after babies, menopause changes, tired skin, energy</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Captures name, email and phone - every completion is a warm lead with concerns already mapped</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Lives on website, Linktree, Instagram bio - works 24/7</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.82rem; color:var(--text-mid); line-height:1.6; margin-bottom:0.4rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Funnels straight into your consult booking with the $50 already explained. No pressure, just the next step</li>
+        </ul>
+        <a href="https://clinic-catalyst-au.github.io/zebra-aesthetics/assessment.html" target="_blank" class="demo-link">Try the Quiz Demo &#8594;</a>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/skin-assessment-mockup.png" alt="Skin assessment quiz">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE: BONUS - PASSWORD-PROTECTED INJECTABLE GALLERY ========== -->
+<section class="slide slide-html teal-bg" data-editable="true">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split">
+      <div>
+        <span class="task-num" style="border-color:var(--peach); color:var(--peach);">Bonus</span>
+        <h2>The B&amp;A <span class="peach">Strategy</span></h2>
+        <div class="quote"><p>"I have to be very careful with how I advertise things."</p></div>
+        <p style="font-size:0.78rem; color:var(--text-mid); margin-bottom:0.7rem;">Two galleries, two compliance rules, one conversion machine:</p>
+        <div style="background:rgba(0,180,160,0.06); border:1px solid rgba(0,180,160,0.25); border-radius:6px; padding:0.6rem 0.85rem; margin-bottom:0.5rem;">
+          <p style="font-size:0.68rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.15rem;">Public Gallery</p>
+          <p style="font-size:0.78rem; color:var(--text-mid); line-height:1.45; margin:0;">Skin, PRP, bioremodelling and body results live on your homepage with a scroller and content warning. TESLAChair stays concern-led, never a therapeutic claim.</p>
+        </div>
+        <div style="background:rgba(232,168,124,0.08); border:1px solid rgba(232,168,124,0.3); border-radius:6px; padding:0.6rem 0.85rem; margin-bottom:0.7rem;">
+          <p style="font-size:0.68rem; color:var(--peach); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.15rem;">Password-Protected</p>
+          <p style="font-size:0.78rem; color:var(--text-mid); line-height:1.45; margin:0;">Injectables behind a password wall, shared after consult. AHPRA and TGA compliant, which you told us matters to you.</p>
+        </div>
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid); line-height:1.5; margin-bottom:0.3rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Public skin B&amp;As build trust before they ever book</li>
+          <li style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid); line-height:1.5; margin-bottom:0.3rem;"><span style="color:var(--teal-bright); flex-shrink:0;">&#8226;</span> Password-gated injectables close the sale at the right stage</li>
+        </ul>
+      </div>
+      <div>
+        <div class="browser-frame">
+          <div class="browser-bar"><span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span></div>
+          <img src="assets/ba-gallery-mockup.png" alt="Password-protected before and after gallery">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 12: PRACTITIONER POSITIONING ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <p class="label">Your biggest competitive edge</p>
+    <h2>Practitioner <span class="teal">Positioning</span></h2>
+    <p style="max-width:700px; margin-bottom:1.5rem;">You are a Registered Nurse, a trainer other nurses learn from, and a woman who has moved her whole practice toward women's health. That story needs to live on every page, every ad and every consult booking.</p>
+    <div style="display:grid; grid-template-columns:1fr; gap:1.5rem; max-width:420px;">
+      <div class="card" style="text-align:center; padding:1.5rem;">
+        <img src="assets/agnes-portrait.jpg" alt="Agnes Dube" style="width:140px; height:140px; border-radius:50%; object-fit:cover; object-position:center 20%; margin-bottom:0.8rem; border:2px solid var(--teal);">
+        <h4 style="color:var(--peach); font-size:0.8rem; margin-bottom:0.2rem;">Agnes Dube</h4>
+        <p style="font-size:0.65rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.05em; margin-bottom:0.4rem;">REGISTERED NURSE &amp; OWNER</p>
+        <p style="font-size:0.75rem; color:var(--text-faint); line-height:1.5;">Registered Nurse with a special interest in women's health through perimenopause and menopause. PRP and advanced nurse trainer, industry educator and speaker. Maroochydore and Maryborough.</p>
+      </div>
+    </div>
+    <p style="font-size:0.75rem; color:var(--text-faint); margin-top:1.2rem; max-width:700px;"><em>When the day comes to bring in a therapist for TESLAChair and skin, they get their own page, gallery and booking link. You stay the face, and the injector, until your daughter is ready.</em></p>
+  </div>
+</section>
+
+<!-- ========== SLIDE 13: TRANSITION ========== -->
+<section class="slide slide-html teal-bg">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-tl"></div>
+  <div class="glow glow-br"></div>
+  <div class="inner" style="text-align:center;">
+    <p class="label label-peach">Sound familiar?</p>
+    <h2 style="font-size:clamp(1.6rem,4vw,2.8rem); margin-bottom:1.5rem;">Stop Doing Everything <span class="peach">Yourself</span></h2>
+    <p style="max-width:650px; margin:0 auto 2rem; font-size:1rem;">Marketing. Follow-up. The 7am DMs. Explaining the deposit. Chasing the timed-out bookings. You shouldn't be juggling all of this between patients.</p>
+    <h2 style="font-size:clamp(1.2rem,3vw,2rem);">That's Where <span class="teal">We Step In</span></h2>
+    <p style="max-width:600px; margin:1rem auto 0; font-size:0.85rem;">Our system uses proven methods to bring you new leads, follow them up with SMS, email and calls, take a deposit to secure their booking, and get them through the door.</p>
+    <div style="margin:2rem auto 0; display:inline-block; background:rgba(0,180,160,0.08); border:1px solid rgba(0,180,160,0.2); border-radius:8px; padding:1rem 2rem;">
+      <p style="font-size:0.7rem; color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.3rem;">Kelly's proven systems</p>
+      <p style="font-size:1.1rem; color:var(--white); font-weight:600;">15+ hours reclaimed per week, within 7 days of going live</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE: HATS WE TAKE OFF YOU (moved here from top) ========== -->
+<section class="slide slide-html alt">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <div class="split-even">
+      <div>
+        <p class="label label-peach">What we actually do</p>
+        <h2>The Hats We<br><span class="teal">Take Off You</span></h2>
+        <p style="margin-bottom:1.2rem;">So you're not in your DMs at 9pm.</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> CRM - set up and configured</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> Ad strategy - built and launched</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> Lead capture - automated</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> Nurture sequences - email & SMS</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> After hours - covered</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> Newsletters - systemised</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> Review requests - automated</div>
+          <div style="display:flex; gap:0.5rem; font-size:0.78rem; color:var(--text-mid);"><span style="color:var(--teal-bright); flex-shrink:0;">&#10003;</span> GEO / AI search - sorted</div>
+        </div>
+        <p class="mt-1" style="font-size:0.85rem; color:var(--peach-light); font-weight:600;">The only hat left is the one you actually want to wear - the clinician.</p>
+      </div>
+      <div>
+        <img src="assets/conference-stage.jpg" alt="Kelly and Alicia presenting" style="width:100%; border-radius:12px; object-fit:cover; object-position:center top; border:2px solid rgba(0,180,160,0.2); max-height:420px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 14: CAMPAIGN PROCESS ========== -->
+<section class="slide slide-html alt">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <p class="label">How it works</p>
+    <h2>Our Campaign <span class="teal">Process</span></h2>
+    <p style="max-width:700px; margin-bottom:2rem;">Client responds to your ad on Facebook or Instagram. They supply their details in exchange for your offer. From there, everything is automated.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:1.2rem;">
+      <div class="card" style="text-align:center; padding:1rem;">
+        <img src="assets/campaign-ad.png" alt="Campaign" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:6px; margin-bottom:0.8rem;">
+        <h4>Campaign</h4>
+        <p>Concern-led ad with a clear offer reaches women within a few kilometres of Ocean Street</p>
+      </div>
+      <div class="card" style="text-align:center; padding:1rem;">
+        <img src="assets/campaign-crm.png" alt="Into CRM" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:6px; margin-bottom:0.8rem;">
+        <h4>Into CRM</h4>
+        <p>Lead details captured instantly - name, phone, email - entered into your system</p>
+      </div>
+      <div class="card" style="text-align:center; padding:1rem;">
+        <img src="assets/campaign-followup.png" alt="Follow Up" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:6px; margin-bottom:0.8rem;">
+        <h4>5-Day Follow Up</h4>
+        <p>Automated SMS, email and call sequences if they don't book immediately</p>
+      </div>
+      <div class="card" style="text-align:center; padding:1rem;">
+        <img src="assets/campaign-booked.png" alt="Booked" style="width:100%; aspect-ratio:1; object-fit:cover; border-radius:6px; margin-bottom:0.8rem;">
+        <h4 style="color:var(--peach);">Booked</h4>
+        <p>Deposit taken, appointment confirmed, client walks through your door</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 15: SYSTEMS INSTALLED ========== -->
+<section class="slide slide-html">
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split-even" style="margin-bottom:1.5rem;">
+      <div>
+        <p class="label">What you walk away with</p>
+        <h2>Systems <span class="teal">Installed</span></h2>
+        <p>When you're not the one juggling 7 systems that don't talk to each other, life gets easier for everyone. We install systems that just do it - no copy-paste, no manual follow-up.</p>
+      </div>
+      <div>
+        <img src="assets/systems-ecosystem.png" alt="Connected ecosystem" style="width:100%; border-radius:8px;">
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/systems-leads-booked.png" alt="Leads Booked" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Leads Booked</h4><p>New enquiries captured, followed up, pre-framed on the $50, and booked into your Timely calendar without you touching your phone</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/systems-nurtured.png" alt="Clients Nurtured" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Clients Nurtured</h4><p>Your Timely database wakes up: the monthly education email, Maryborough dates, treatment plan reminders and recall on autopilot</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/systems-emails.png" alt="Emails Handled" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Emails &amp; DMs Handled</h4><p>You don't need to answer the same questions all day - the system responds instantly, you focus on treating</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/systems-afterhours.png" alt="After-Hours" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>After-Hours Covered</h4><p>Enquiries handled outside clinic hours so you're not replying at 9pm - zero leads lost overnight</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 16: YOUR PART ========== -->
+<section class="slide slide-html alt">
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <p class="label label-peach">Team effort</p>
+    <h2>Your Part in <span class="teal">the Success</span></h2>
+    <p style="max-width:700px; margin-bottom:1.5rem;">We can't control every aspect of your business. The overall success comes down to a team effort. Here's what we need from you.</p>
+    <div class="grid-2">
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/yourpart-ba.png" alt="Before & Afters" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Post Before &amp; After Images</h4><p>New leads naturally stalk your profile. Keep filming on your content day. It takes 6 to 9 interactions before someone books, and your videos do the convincing.</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/yourpart-experience.png" alt="Deliver" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Deliver the Experience</h4><p>The system gets them through the door. From there, it is your experience as a nurse that turns a first visit into a ten-session plan.</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/yourpart-clinic.png" alt="Clinic" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Create an Experience</h4><p>Serene, welcoming clinic on Ocean Street near Cotton Tree. The location is your edge, and World Gym next door is about to hand you foot traffic.</p></div>
+      </div>
+      <div class="card" style="padding:1rem; display:flex; gap:1rem; align-items:center;">
+        <img src="assets/yourpart-rebook.png" alt="Rebook" style="width:120px; height:120px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+        <div><h4>Upsell &amp; Rebook</h4><p>Turn a first session into the ten-session plan. Ask what day works for session two, never whether they want it. That is where the TESLAChair revenue lives.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== YOUR PATH FORWARD: 3-DAY BRISBANE WORKSHOP ========== -->
+<section class="slide slide-html">
+  <div class="glow glow-br"></div>
+  <div class="inner">
+    <div class="split-even">
+      <div>
+        <p class="label">Your path forward</p>
+        <h2>Fire Your Marketing Agency<br><span class="teal">3-Day Workshop, Brisbane</span></h2>
+        <p style="margin-bottom:1.5rem;">You asked us to put your name down. This is what that looks like: three days, laptop open, and you leave with everything in this plan built, live and owned by you.</p>
+        <div class="faq-item">
+          <p class="faq-q">Before you arrive</p>
+          <p class="faq-a">Half the system deployed in advance: your SMS number, CRM, follow-up ladder, the assistant trained on your voice and your $50 policy, ad accounts and pixel checked, Claude skill library installed.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Day 1 - Foundations &amp; Filming &middot; Day 2 - Launch Day &middot; Day 3 - Content, Reactivation &amp; Handover</p>
+          <p class="faq-a">Offer and messaging locked, content filmed with you. Meta and Google campaigns go live in the room. Newsletter engine loaded, reactivation fired to your Timely list, keys handed over. Then 30 days of support.</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-q">Where and when?</p>
+          <p class="faq-a">Brisbane, <strong style="color:var(--peach);">26 to 28 October 2026</strong>. Ten seats, so both of us can sit beside every clinic. Laptop required. Payment plans available.</p>
+        </div>
+      </div>
+      <div>
+        <div class="price-card">
+          <p class="price-period">Secure your seat</p>
+          <div class="price-tag">$500</div>
+          <p style="font-size:0.7rem; color:var(--text-faint); margin-top:0.2rem;">deposit per person &middot; balance before the workshop</p>
+          <ul class="includes-list">
+            <li>CRM and lead capture, live</li>
+            <li>Assistant on DMs, email and missed calls</li>
+            <li>TESLAChair women's wellness campaign, launched</li>
+            <li>Google verified, Search ads running</li>
+            <li>Follow-up ladder and timed-out booking recovery</li>
+            <li>Monthly newsletter and Maryborough reminders</li>
+            <li>Reactivation campaign fired to your database</li>
+            <li>30 days of content, filmed with you</li>
+            <li>30-skill Claude library, yours forever</li>
+            <li>30 days of support after the room</li>
+          </ul>
+          <div class="discount-badge">Ten seats only</div>
+          <a href="https://www.cliniccatalyst.com.au/checkout-page" target="_blank" style="display:inline-block; margin-top:1rem; background:var(--teal-bright); color:var(--dark); padding:0.8rem 1.6rem; border-radius:6px; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none;">Pay My $500 Deposit &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE: WHAT WE BUILD TOGETHER ========== -->
+<section class="slide slide-html alt">
+  <div class="dot-overlay"></div>
+  <div class="glow glow-tl"></div>
+  <div class="inner">
+    <p class="label label-peach">Everything you walk out with</p>
+    <h2>What We <span class="teal">Build Together</span></h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.2rem; margin-top:1.5rem;">
+      <div class="card" style="padding:1.2rem;">
+        <h4>Meta Ads</h4>
+        <p>Concern-led women's wellness campaign, geo-targeted around Ocean Street. Pixel installed, retargeting live.</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <h4>Google Ads</h4>
+        <p>Profile verified first. Then high-intent search: "pelvic floor treatment Sunshine Coast", "cosmetic nurse Maroochydore", "PRP Sunshine Coast".</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <h4>CRM &amp; Automations</h4>
+        <p>Timely connected to a CRM. Lead capture, deposit pre-frame, timed-out booking recovery, treatment plan reminders.</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <h4>Email &amp; SMS</h4>
+        <p>Monthly education email from a proper system. Maryborough dates by SMS from your number. Review requests after every appointment.</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <h4>Lead Capture</h4>
+        <p>Women's wellness assessment live on the website and Instagram bio. Every lead captured with the concern already mapped.</p>
+      </div>
+      <div class="card" style="padding:1.2rem;">
+        <h4>GEO &amp; AI Search</h4>
+        <p>Maroochydore and Cotton Tree in your page titles, structured data for Maps, and GEO coding so AI search names you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SLIDE 21: PROJECT ACCEPTANCE ========== -->
+<section class="slide slide-html" data-editable="true">
+  <div class="dot-overlay"></div>
+  <div class="inner">
+    <p class="label">Final step</p>
+    <h2>Project <span class="teal">Acceptance</span></h2>
+    <p style="max-width:700px;">This proposal remains confidential between Clinic Catalyst and <strong>Zebra Aesthetics</strong> and must not be disclosed to any third party without written approval of Clinic Catalyst.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; margin-top:2rem;">
+      <div class="card">
+        <h4>Agreement</h4>
+        <p>Three-day Brisbane workshop, 26 to 28 October 2026, plus 30 days of support. You own every system built.</p>
+      </div>
+      <div class="card">
+        <h4>Payment</h4>
+        <p>$500 deposit secures your seat. Balance before the workshop. Payment plan available on request.</p>
+      </div>
+      <div class="card">
+        <h4>Commencement</h4>
+        <p>Pre-room deployment begins as soon as the deposit lands.</p>
+      </div>
+    </div>
+    <div id="sig-section" style="margin-top:2rem; max-width:600px;">
+      <div style="display:grid; grid-template-columns:2fr 1fr; gap:1.5rem; align-items:end;">
+        <div>
+          <p class="sig-label" style="margin-bottom:0.4rem;">Sign below</p>
+          <div style="position:relative; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:8px; overflow:hidden;">
+            <canvas id="sig-canvas" width="400" height="140" style="width:100%; height:140px; cursor:crosshair; display:block; touch-action:none;"></canvas>
+            <button onclick="clearSig()" style="position:absolute; top:6px; right:6px; background:rgba(255,255,255,0.1); border:none; color:var(--text-faint); font-size:0.6rem; padding:3px 8px; border-radius:3px; cursor:pointer; font-family:'Montserrat',sans-serif;">Clear</button>
+          </div>
+          <input id="sig-name" type="text" placeholder="Full name" style="margin-top:0.6rem; width:100%; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.7rem 1rem; font-size:0.85rem; color:var(--white); font-family:'Open Sans',sans-serif; outline:none;">
+        </div>
+        <div>
+          <p class="sig-label" style="margin-bottom:0.4rem;">Date</p>
+          <div style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.15); border-radius:8px; padding:0.8rem 1rem; font-size:0.85rem; color:var(--text-mid);" id="sig-date"></div>
+        </div>
+      </div>
+      <button id="accept-btn" onclick="acceptProposal()" style="margin-top:1.5rem; background:var(--teal-bright); color:var(--dark); border:none; padding:0.9rem 2.5rem; font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; border-radius:6px; cursor:pointer; transition:all 0.2s;">Accept Proposal</button>
+      <div id="accept-confirm" style="display:none; margin-top:1.5rem; padding:1.2rem; background:rgba(0,212,188,0.1); border:1px solid var(--teal); border-radius:8px;">
+        <p style="color:var(--teal-bright); font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.85rem;">Proposal Accepted</p>
+        <p style="font-size:0.8rem; color:var(--text-mid); margin-top:0.3rem;">Thank you! We'll be in touch shortly to get started.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
 
-<footer>
-  <div class="wrap">
-    Prepared by Kelly Wotherspoon and Alicia Hagen &middot; Clinic Catalyst &middot; cliniccatalyst.com.au<br>
-    Based on our scoping call on 1 September 2026 and a review of zebraaesthetics.com.au and your socials.
-  </div>
-</footer>
+<div class="slide-counter" id="counter">1 / --</div>
+<div class="nav-hint">Arrow keys to navigate &middot; F for fullscreen</div>
 
+<script>
+const deck = document.getElementById('deck');
+const slides = document.querySelectorAll('.slide');
+const counter = document.getElementById('counter');
+const total = slides.length;
+counter.textContent = '1 / ' + total;
+function updateCounter() {
+  const current = Math.round(deck.scrollTop / window.innerHeight) + 1;
+  counter.textContent = current + ' / ' + total;
+}
+deck.addEventListener('scroll', updateCounter);
+document.addEventListener('keydown', function(e) {
+  const h = window.innerHeight;
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); deck.scrollBy({top:h, behavior:'smooth'}); }
+  if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); deck.scrollBy({top:-h, behavior:'smooth'}); }
+  if (e.key === 'Home') { e.preventDefault(); deck.scrollTo({top:0, behavior:'smooth'}); }
+  if (e.key === 'End') { e.preventDefault(); deck.scrollTo({top:deck.scrollHeight, behavior:'smooth'}); }
+  if (e.key === 'f' || e.key === 'F') {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  }
+});
+var ua = navigator.userAgent || '';
+if (/FBAN|FBAV|Instagram|Line|Messenger/i.test(ua)) {
+  var banner = document.getElementById('inapp-banner');
+  var link = document.getElementById('inapp-link');
+  if (banner) { banner.style.display = 'block'; }
+  if (link) { link.href = window.location.href; }
+}
+const canvas = document.getElementById('sig-canvas');
+const ctx = canvas ? canvas.getContext('2d') : null;
+let drawing = false;
+let hasSigned = false;
+if (ctx) {
+  ctx.strokeStyle = '#00D4BC';
+  ctx.lineWidth = 2;
+  ctx.lineCap = 'round';
+  function getPos(e) {
+    const r = canvas.getBoundingClientRect();
+    const t = e.touches ? e.touches[0] : e;
+    return { x: (t.clientX - r.left) * (canvas.width / r.width), y: (t.clientY - r.top) * (canvas.height / r.height) };
+  }
+  canvas.addEventListener('mousedown', e => { drawing = true; hasSigned = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); });
+  canvas.addEventListener('mousemove', e => { if (!drawing) return; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); });
+  canvas.addEventListener('mouseup', () => drawing = false);
+  canvas.addEventListener('mouseleave', () => drawing = false);
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); drawing = true; hasSigned = true; const p = getPos(e); ctx.beginPath(); ctx.moveTo(p.x, p.y); }, {passive:false});
+  canvas.addEventListener('touchmove', e => { e.preventDefault(); if (!drawing) return; const p = getPos(e); ctx.lineTo(p.x, p.y); ctx.stroke(); }, {passive:false});
+  canvas.addEventListener('touchend', () => drawing = false);
+}
+const dateEl = document.getElementById('sig-date');
+if (dateEl) dateEl.textContent = new Date().toLocaleDateString('en-AU', {day:'numeric', month:'long', year:'numeric'});
+function clearSig() {
+  if (ctx) { ctx.clearRect(0, 0, canvas.width, canvas.height); hasSigned = false; }
+}
+function acceptProposal() {
+  const name = document.getElementById('sig-name').value.trim();
+  if (!hasSigned) { alert('Please sign above before accepting.'); return; }
+  if (!name) { alert('Please enter your full name.'); return; }
+  document.getElementById('accept-btn').style.display = 'none';
+  document.getElementById('accept-confirm').style.display = 'block';
+}
+</script>
 </body>
 </html>
